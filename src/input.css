@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes bounce1 {
+  0%,
+  100% {
+    transform: translateY(-15%);
+    animation-timing-function: ease-in-out;
+  }
+
+  50% {
+    transform: translateY(0);
+    animation-timing-function: ease-in-out;
+  }
+}
+
+.animate-bounce1 {
+  animation: bounce1 4s linear infinite;
+}
+
+.progress-ring__circle {
+  transition: stroke-dashoffset 0.35s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}

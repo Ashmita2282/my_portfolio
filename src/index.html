@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Traveling Blog">
+    <meta name="description" content="My Portfoio">
+    <meta name="author" content="Ashmita Shrivas">
+    <title>My Portfoio</title>
+    <link rel="icon" href="../images/logo4.jpg">
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        header {
+            z-index: 1 !important;
+        }
+
+        .profile {
+            box-shadow: 8px 16px 32px 8px rgba(251, 249, 249, 0.2), 4px 16px 42px 4px rgba(252, 248, 248, 0.19);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-gray-900 rounded border fixed w-full">
+        <nav class="">
+            <div class="flex z-1000 justify-between text-white w-full">
+                <div class="flex logo mx-2 w-[25%]">
+                    <img src="./../images/logo5.png" alt="logo" class="w-28 rounded">
+                </div>
+                <div class="p-2 mt-5 mb-3 sm:mb-4 sm:mt-2 w-[25%] flex justify-center">
+                    <a class="p-3 rounded-l-lg bg-secondary hover:bg-slate-700 shadow-sm shadow-slate-100"><i
+                            class="fa-regular fa-moon text-black text-xl hover:text-secondary"></i></a>
+                    <a class="p-3 rounded-r-lg bg-slate-700 hover:bg-secondary shadow-sm shadow-slate-100"><i
+                            class="fa-regular fa-sun text-secondary text-xl hover:text-black"></i></a>
+                </div>
+                <div class="menu p-4 flex w-[50%]">
+                    <ul class="hidden sm:flex gap-3 my-4 justify-end font-semibold text-xl">
+                        <li class="text-secondary p-1 hover:underline ">
+                            <a class="hover:border-white hover:shadow-lg" href="#home">Home</a>
+                        </li>
+                        <li class="text-white p-1 hover:underline hover:text-secondary  hover:bg-gray-600">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="text-white p-1 hover:underline hover:text-secondary  hover:bg-gray-600">
+                            <a href="#skills">Skills</a>
+                        </li>
+                        <li class="text-white p-1 hover:underline hover:text-secondary  hover:bg-gray-600">
+                            <a href="#certificate">Certificate</a>
+                        </li>
+                        <li class="text-white p-1 hover:underline hover:text-secondary  hover:bg-gray-600">
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <li class="text-white p-1 hover:underline hover:text-secondary  hover:bg-gray-600">
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- Dropdown -->
+                    <div class="relative dropdown justify-start sm:hidden">
+                        <!-- Dropdown trigger button -->
+                        <button class="bg-gray-800 rounded text-white font-semibold p-4"> <i
+                                class="fa fa-bars w-10"></i></button>
+
+                        <!-- Dropdown content -->
+                        <div id="myDropdown"
+                            class="absolute bg-white rounded-md shadow-lg mt-1 dropdown-content hidden">
+                            <a href="#home" class="block px-4 py-2 text-black hover:bg-gray-200">Home</a>
+                            <a href="#about" class="block px-4 py-2 text-black hover:bg-gray-200">About</a>
+                            <a href="#skills" class="block px-4 py-2 text-black hover:bg-gray-200">Skills</a>
+                            <a href="#certificate" class="block px-4 py-2 text-black hover:bg-gray-200">Certificate</a>
+                            <a href="#projects" class="block px-4 py-2 text-black hover:bg-gray-200">Projects</a>
+                            <a href="#contact" class="block px-4 py-2 text-black hover:bg-gray-200">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Intro -->
+    <section class="pt-20 bg-slate-800" id="home">
+        <div class="flex flex-col w-full sm:flex-row text-white items-center justify-between" id="home">
+            <div
+                class="p-2 gap-8 sm:ml-8 sm:flex flex-row sm:flex-col sm:w-[20%] hidden font-sans font-bold pl-16 pt-0 animate-bounce1 ">
+                <a href="https://www.linkedin.com/in/ashmita-shrivas-566265202/"
+                    class="border-2 p-1 border-secondary rounded-full  hover:bg-secondary shadow-lg  hover:shadow-slate-100 animate-pulse"><i
+                        class="ri-linkedin-box-line text-secondary text-xl hover:text-black"></i></a>
+                <a
+                    class="border-2 p-1 border-secondary rounded-full hover:bg-secondary shadow-lg hover:shadow-slate-100 animate-pulse"><i
+                        class="ri-instagram-line text-secondary text-xl hover:text-black"></i></a>
+                <a class="border-2 p-1 border-secondary rounded-full hover:bg-secondary shadow-lg hover:shadow-slate-100 animate-pulse"
+                    href="mailto:shrivasashmita.com"><i
+                        class="ri-mail-line text-secondary text-xl hover:text-black"></i></a>
+                <a
+                    class="border-2 p-1 border-secondary rounded-full hover:bg-secondary shadow-lg hover:shadow-slate-100 animate-pulse"><i
+                        class="ri-github-line text-secondary text-xl hover:text-black"></i></a>
+                <!-- <div class="h-44 w-1 m-3 bg-secondary "></div> -->
+            </div>
+            <div class="sm:w-[40%] font-bold sm:pt-0 p-5  pt-10 font-serif">
+                <h3 class="text-xl p-2">Hello, I'm </h3>
+                <h1 class="text-5xl font-bold text-white p-2">Ashmita Shrivas</h1>
+                <p class="text-lg p-2">I am a Web Developer build things for the web</p>
+                <div class="p-2 gap-5 font-serif font-bold flex flex-row sm:flex-col sm:hidden">
+                    <a href="https://www.linkedin.com/in/ashmita-shrivas-566265202/"
+                        class="border-2 p-1 border-secondary rounded-full  hover:bg-secondary shadow-lg hover:shadow-slate-100"><i
+                            class="ri-linkedin-box-line text-secondary text-xl hover:text-black"></i></a>
+                    <a
+                        class="border-2 p-1 border-secondary rounded-full hover:bg-secondary shadow-lg hover:shadow-slate-100"><i
+                            class="ri-instagram-line text-secondary text-xl hover:text-black"></i></a>
+                    <a class="border-2 p-1 border-secondary rounded-full hover:bg-secondary shadow-lg hover:shadow-slate-100"
+                        href="mailto:shrivasashmita.com"><i
+                            class="ri-mail-line text-secondary text-xl hover:text-black"></i></a>
+                    <a
+                        class="border-2 p-1 border-secondary rounded-full hover:bg-secondary shadow-lg hover:shadow-slate-100"><i
+                            class="ri-github-line text-secondary text-xl hover:text-black"></i></a>
+                </div>
+                <button
+                    class="border m-3 text-lg font-semibold rounded-xl bg-secondary p-1 text-black shadow-lg hover:shadow-slate-100 animate-bounce1">Download
+                    CV</button>
+            </div>
+            <div class="sm:w-[40%] p-8 sm:mr-8">
+                <img src="./../images/img.jpg" alt="My Image"
+                    class="sm:mt-20 w-74 h-80 rounded animate-bounce1 shadow-lg profile hover:shadow-slate-100">
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="bg-gray-800 pt-28 text-white" id="about">
+        <div class="flex pl-6">
+            <h1 class="text-3xl gap-5 ml-10 font-bold">About <span class="text-secondary">Me</span></h1>
+            <div class="h-1 w-40 sm:w-60 m-7 bg-secondary hidden sm:inline"></div>
+        </div>
+        <div class="flex flex-col sm:flex-row w-full justify-between items-center">
+            <div class="sm:w-[40%] p-5 w-full">
+                <lottie-player src="https://lottie.host/ff1bdb1b-754e-4daf-9669-78ed5344a2a1/DSlTFtF7Ka.json"
+                    background="transparent" speed="1" loop autoplay class="sm:p-8 sm:pt-0"></lottie-player>
+            </div>
+            <div class="sm:w-[60%] w-full p-5">
+                <h3 class="text-2xl gap-5 font-semibold">
+                    Digital Design Maestro !
+                </h3>
+                <p class="text-lg gap-5 mt-3">Hello! I'm Ashmita Shrivas, and I thrive in the realm of web development.
+                    As a versatile full-stack web developer, I am deeply passionate about crafting websites that
+                    seamlessly blend beauty, responsiveness, and functionality. With every project, I aim to contribute
+                    to a digital
+                    landscape that enriches, empowers, and inspires.As a web developer, I see myself as a facilitator of
+                    meaningful connections, bridging the gap between technology and humanity.I pride myself on being a
+                    quick learner and a collaborative team player, driven by a profound passion for the intersection of
+                    web development and design.
+                </p>
+                <p class="text-md gap-5 mt-3 font-cursive font-semibold">In the realm of web development, my commitment
+                    extends far
+                    beyond the mere creation of digital
+                    assets. It's about fostering a positive impact through every line of code, every pixel perfected,
+                    and every user interaction carefully crafted.</p>
+                <button
+                    class="border mt-3  text-lg font-semibold rounded-xl bg-secondary p-1 text-black shadow-lg shadow-slate-100 hover:shadow-slate-100">Read
+                    More</button>
+                <!-- <div class='flex justify-center items-center'>
+                    <div class='group text-xl'>
+                        <strong class='group-hover:text-secondary'>Hover on me </strong>
+                        <strong class='group-hover:text-green-500'>the texts will be </strong>
+                        <strong class='group-hover:text-blue-500'>of different colors</strong>
+                    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- Skill -->
+    <section class="bg-slate-800 pt-28 text-white" id="skills">
+        <div class="flex justify-center items-center">
+            <h1 class="text-3xl gap-5 font-bold">My <span class="text-secondary">Skills</span></h1>
+            <div class="h-1 w-40 sm:w-60 mt-5 ml-6 bg-secondary hidden sm:inline"></div>
+        </div>
+        <div class="flex flex-col sm:flex-row text-white items-center justify-between p-10 w-full">
+            <div class=" bg-gray-900 border p-3 rounded-lg sm:w-[30%] w-full">
+                <div class="flex gap-5">
+                    <h1 class="pb-2 text-md font-semibold flex">HTML</h1>
+                </div>
+                <div class="w-[90%] bg-gray-300 rounded">
+                    <div class="h-2 bg-green-500 rounded flex justify-end" style="width: 90%;">
+                        <p class="text-sm pt-2 font-bold border shadow">90%</p>
+                    </div>
+                </div>
+                <h1 class="pb-2 pt-5 text-md font-semibold">CSS</h1>
+                <div class="w-[90%] bg-gray-300 rounded">
+                    <div class="h-2 bg-green-500 rounded flex justify-end" style="width: 75%;">
+                        <p class="text-sm pt-2 font-bold border shadow">75%</p>
+                    </div>
+                </div>
+                <h1 class="pb-2 pt-5 text-md font-semibold">Taiwind CSS</h1>
+                <div class="w-[90%] bg-gray-300 rounded">
+                    <div class="h-2 bg-green-500 rounded flex justify-end" style="width: 70%;">
+                        <p class="text-sm pt-2 font-bold border shadow">70%</p>
+                    </div>
+                </div>
+                <h1 class="pb-2 pt-5 text-md font-semibold">React Js</h1>
+                <div class="w-[90%] bg-gray-300 rounded">
+                    <div class="h-2 bg-green-500 rounded flex justify-end" style="width: 50%;">
+                        <p class="text-sm pt-2 font-bold border shadow">50%</p>
+                    </div>
+                </div>
+                <h1 class="pb-2 pt-5 text-md font-semibold">OOPS</h1>
+                <div class="w-[90%] bg-gray-300 rounded">
+                    <div class="h-2 bg-green-500 rounded flex justify-end" style="width: 60%;">
+                        <p class="text-sm pt-2 font-bold border shadow">60%</p>
+                    </div>
+                </div>
+                <h1 class="pb-2 pt-5 text-md font-semibold">DBMS</h1>
+                <div class="w-[90%] bg-gray-300 rounded mb-5">
+                    <div class="h-2 bg-green-500 rounded flex justify-end" style="width: 50%;">
+                        <p class="text-sm pt-2 font-bold border shadow">50%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sm:w-[30%] m-5 p-5 w-full">
+                <lottie-player src="https://lottie.host/e98cea8c-42fc-41e7-861a-29a8a99c36c1/ZS3vQpih3L.json"
+                    background="transparent" speed="1" loop autoplay></lottie-player>
+            </div>
+            <div
+                class=" bg-gray-900 border rounded-lg pt-5 pb-5 p-3 m-1 sm:w-[30%] w-full flex flex-wrap text-white h-800">
+                <div class="relative w-1/2 h-40 pb-3 flex flex-col justify-center items-center">
+                    <svg class="w-full h-full" viewBox="0 0 100 100">
+                        <!-- Background circle -->
+                        <circle class="text-gray-200 stroke-current" stroke-width="8" cx="50" cy="50" r="40"
+                            fill="transparent"></circle>
+                        <!-- Progress circle -->
+                        <circle class="text-indigo-400  progress-ring__circle stroke-current" stroke-width="7"
+                            stroke-linecap="round" cx="50" cy="50" r="40" fill="transparent" stroke-dasharray="251.2"
+                            stroke-dashoffset="calc(251.2 - (251.2 * 78) / 100)"></circle>
+
+                        <!-- Center text -->
+                        <text x="50" y="50" font-family="Verdana" font-size="12" text-anchor="middle"
+                            alignment-baseline="middle" fill="white">78%</text>
+                    </svg>
+                    <p class="text-md font-semibold">Creativity</p>
+                </div>
+                <div class="relative w-1/2 h-40 pb-3 flex flex-col justify-center items-center">
+                    <svg class="w-full h-full" viewBox="0 0 100 100">
+                        <!-- Background circle -->
+                        <circle class="text-gray-200 stroke-current" stroke-width="8" cx="50" cy="50" r="40"
+                            fill="transparent"></circle>
+                        <!-- Progress circle -->
+                        <circle class="text-pink-400  progress-ring__circle stroke-current" stroke-width="7"
+                            stroke-linecap="round" cx="50" cy="50" r="40" fill="transparent" stroke-dasharray="251.2"
+                            stroke-dashoffset="calc(251.2 - (251.2 * 90) / 100)"></circle>
+
+                        <!-- Center text -->
+                        <text x="50" y="50" font-family="Verdana" font-size="12" text-anchor="middle"
+                            alignment-baseline="middle" fill="white">90%</text>
+
+                    </svg>
+                    <p class="text-md font-semibold">Communication</p>
+                </div>
+                <div class="relative w-1/2 h-40 pb-3 pt-1 flex flex-col justify-center items-center">
+                    <svg class="w-full h-full" viewBox="0 0 100 100">
+                        <!-- Background circle -->
+                        <circle class="text-gray-200 stroke-current" stroke-width="8" cx="50" cy="50" r="40"
+                            fill="transparent"></circle>
+                        <!-- Progress circle -->
+                        <circle class="text-red-400  progress-ring__circle stroke-current" stroke-width="7"
+                            stroke-linecap="round" cx="50" cy="50" r="40" fill="transparent" stroke-dasharray="251.2"
+                            stroke-dashoffset="calc(251.2 - (251.2 * 85) / 100)"></circle>
+
+                        <!-- Center text -->
+                        <text x="50" y="50" font-family="Verdana" font-size="12" text-anchor="middle"
+                            alignment-baseline="middle" fill="white">85%</text>
+                    </svg>
+                    <p class="text-md font-semibold">Problem Solving</p>
+                </div>
+                <div class="relative w-1/2 h-40 pb-3 pt-1 flex flex-col justify-center items-center">
+                    <svg class="w-full h-full" viewBox="0 0 100 100">
+                        <!-- Background circle -->
+                        <circle class="text-gray-200 stroke-current" stroke-width="8" cx="50" cy="50" r="40"
+                            fill="transparent"></circle>
+                        <!-- Progress circle -->
+                        <circle class="text-blue-400 progress-ring__circle stroke-current" stroke-width="7"
+                            stroke-linecap="round" cx="50" cy="50" r="40" fill="transparent" stroke-dasharray="251.2"
+                            stroke-dashoffset="calc(251.2 - (251.2 * 95) / 100)"></circle>
+
+                        <!-- Center text -->
+                        <text x="50" y="50" font-family="Verdana" font-size="12" text-anchor="middle"
+                            alignment-baseline="middle" fill="white">95%</text>
+                    </svg>
+                    <p class="text-md font-semibold">Team Work</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Certifications -->
+    <section class="bg-gray-800 pt-28 text-white" id="certificate">
+        <div class="flex pl-6 justify-center items-center">
+            <h1 class="text-3xl gap-5 font-bold">My <span class="text-secondary">Certificate</span></h1>
+            <div class="h-1 mt-5 ml-6 bg-secondary hidden sm:inline sm:w-60"></div>
+        </div>
+        <div class="flex flex-col sm:flex-row justify-evenly pt-6 text-center w-full">
+            <div
+                class="w-[25%] p-6 m-5 h-78 bg-slate-700 rounded-lg border transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-105  duration-200  shadow-lg hover:shadow-secondary">
+                <i class="fa-solid fa-code fa-xl p-5 text-secondary"></i>
+                <h1 class="text-2xl text-pink-100 font-bold">Web Development Certificate</h1>
+                <p>Completing the Web Development Certification program demonstrates my mastery of essential web
+                    development skills and knowledge.
+                <p>
+                    With this certification, I am equipped to pursue a successful career as a professional web
+                    developer, armed with the expertise and confidence to tackle diverse projects in the field of web
+                    development.
+                </p>
+
+                <a href="https://docs.google.com/document/d/1-3-wTSEb3j_1qrwffu2NdlCca9DaA54h/edit">
+                    <button
+                        class="border m-2  text-sm font-bold rounded-xl bg-secondary p-2 text-black shadow-lg shadow-slate-100 hover:shadow-slate-100">View
+                        Certificate</button>
+                </a>
+
+            </div>
+            <div
+                class="w-[25%] p-6 m-5 h-78 bg-slate-700 rounded-lg border transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-105  duration-200  shadow-lg hover:shadow-secondary">
+                <i class="fa-solid fa-paintbrush fa-xl p-5 text-secondary"></i>
+                <h1 class="text-2xl text-pink-100 font-bold">UI/UX Design <br> Certificate</h1>
+                <p>
+                    Earning my UI/UX Certification validates my proficiency in creating engaging and user-centric
+                    digital experiences.
+                </p>
+                <p>This certification signifies my ability to design digital products that prioritize. With my UI/UX
+                    Certification, I am well-equipped to drive innovation and elevate user engagement in
+                    the ever-evolving digital landscape.
+                </p>
+                <a href="https://docs.google.com/document/d/1-3-wTSEb3j_1qrwffu2NdlCca9DaA54h/edit">
+                    <button
+                        class="border m-2  text-sm font-bold rounded-xl bg-secondary p-2 text-black shadow-lg shadow-slate-100 hover:shadow-slate-100">View
+                        Certificate</button>
+                </a>
+
+            </div>
+            <div
+                class="w-[25%] p-6 m-5 h-78 bg-slate-700 rounded-lg border transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-105  duration-200  shadow-lg hover:shadow-secondary">
+                <i class="fa-brands fa-aws fa-xl p-5 text-secondary"></i>
+                <h1 class="text-2xl font-bold text-pink-100">AWS Cloud Architecting Certificate</h1>
+                <p>My completion of the AWS Cloud certificate signifies my mastery of cloud
+                    architecture on the Amazon Web Services platform.
+                </p>
+                <p>
+                    Intensive training enhanced my expertise in AWS services. This certificate confirms my ability to
+                    design scalable, resilient, and cost-effective
+                    cloud solutions as an AWS-certified architect..
+                </p>
+                <a href="https://docs.google.com/document/d/1-3-wTSEb3j_1qrwffu2NdlCca9DaA54h/edit">
+                    <button
+                        class="border m-2  text-sm font-bold rounded-xl bg-secondary p-2 text-black shadow-lg shadow-slate-100 hover:shadow-slate-100">View
+                        Certificate</button>
+                </a>
+
+            </div>
+        </div>
+    </section>
+    <!-- Projects -->
+    <section class="bg-gray-800 pt-28 text-white" id="projects">
+        <div class="flex pl-6 justify-center items-center">
+            <h1 class="text-3xl gap-5 font-bold">Latest <span class="text-secondary">Projects</span></h1>
+            <div class="h-1 mt-5 ml-4 bg-secondary hidden sm:inline sm:w-60"></div>
+        </div>
+        <div class="flex flex-col sm:flex-row flex-wrap justify-evenly pt-6 text-center w-full">
+            <div
+                class="w-[25%] p-6 m-5 h-78 bg-slate-700 rounded-lg border transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-105  duration-200  shadow-lg hover:shadow-secondary">
+                <h1
+                    class="text-xl p-2 mb-3 text-secondary font-bold bg-slate-700  rounded shadow-sm transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110  duration-300 hover:shadow-secondary">
+                    Sadhak <br><span class="text-white font-semibold text-sm "> Solution for illegal activities on
+                        dark web</span></h1>
+                <lottie-player src="https://lottie.host/d8be2098-36be-46d1-aa8f-58226e4254a2/XAz85R74ON.json"
+                    background="transparent" speed="1" loop autoplay
+                    class="h-60 p-2 mb-5 bg-slate-700  rounded shadow-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110  duration-300 hover:shadow-secondary animate-pulse"></lottie-player>
+            </div>
+            <div
+                class="w-[25%] p-6 m-5 h-78 bg-slate-700 rounded-lg border transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-105  duration-200  shadow-lg hover:shadow-secondary">
+                <h1
+                    class="text-xl p-2 mb-3 text-secondary font-bold bg-slate-700  rounded shadow-sm transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110  duration-300 hover:shadow-secondary">
+                    Reactogram <br><span class="text-white font-semibold text-sm">A social media app with lots of
+                        features</span></h1>
+                <lottie-player src="https://lottie.host/b75b79ce-48b6-45a8-991a-89fb86bdb611/UxqxE6pelM.json"
+                    background="transparent" speed="1" loop autoplay
+                    class="h-60 p-2 mb-5 bg-slate-700 rounded shadow-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110  duration-300 hover:shadow-secondary animate-pulse"></lottie-player>
+            </div>
+            <div
+                class="w-[25%] p-6 m-5 h-78 bg-slate-700 rounded-lg border transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-105  duration-200  shadow-lg hover:shadow-secondary">
+                <h1
+                    class="text-xl p-2 mb-3 text-secondary font-bold bg-slate-700  rounded shadow-sm transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110  duration-300 hover:shadow-secondary">
+                    E- Commerce <br><span class="text-white font-semibold text-sm"> Online shopping platform for the
+                        shopping</span></h1>
+                <lottie-player src="https://lottie.host/ccaa727f-d2bd-462a-9a7f-6082493aa681/LC5nGs6tjA.json"
+                    background="transparent" speed="1" loop autoplay
+                    class="h-60 p-2 mb-5 bg-slate-700  rounded shadow-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110  duration-300 hover:shadow-secondary animate-pulse"></lottie-player>
+
+            </div>
+            <div
+                class="w-[25%] p-6 m-5 h-78 bg-slate-700 rounded-lg border transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-105  duration-200  shadow-lg hover:shadow-secondary">
+                <h1
+                    class="text-xl p-2 mb-3 text-secondary font-bold bg-slate-700  rounded shadow-sm transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110  duration-300 hover:shadow-secondary">
+                    Sadhak <br><span class="text-white font-semibold text-sm "> Solution for illegal activities on
+                        dark web</span></h1>
+                <lottie-player src="https://lottie.host/d8be2098-36be-46d1-aa8f-58226e4254a2/XAz85R74ON.json"
+                    background="transparent" speed="1" loop autoplay
+                    class="h-60 p-2 mb-5 bg-slate-700  rounded shadow-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110  duration-300 hover:shadow-secondary animate-pulse"></lottie-player>
+            </div>
+            <div
+                class="w-[25%] p-6 m-5 h-78 bg-slate-700 rounded-lg border transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-105  duration-200  shadow-lg hover:shadow-secondary">
+                <h1
+                    class="text-xl p-2 mb-3 text-secondary font-bold bg-slate-700  rounded shadow-sm transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110  duration-300 hover:shadow-secondary">
+                    Reactogram <br><span class="text-white font-semibold text-sm">A social media app with lots of
+                        features</span></h1>
+                <lottie-player src="https://lottie.host/b75b79ce-48b6-45a8-991a-89fb86bdb611/UxqxE6pelM.json"
+                    background="transparent" speed="1" loop autoplay
+                    class="h-60 p-2 mb-5 bg-slate-700 rounded shadow-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110  duration-300 hover:shadow-secondary animate-pulse"></lottie-player>
+            </div>
+            <div
+                class="w-[25%] p-6 m-5 h-78 bg-slate-700 rounded-lg border transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-105  duration-200  shadow-lg hover:shadow-secondary">
+                <h1
+                    class="text-xl p-2 mb-3 text-secondary font-bold bg-slate-700  rounded shadow-sm transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110  duration-300 hover:shadow-secondary">
+                    E- Commerce <br><span class="text-white font-semibold text-sm"> Online shopping platform for the
+                        shopping</span></h1>
+                <lottie-player src="https://lottie.host/ccaa727f-d2bd-462a-9a7f-6082493aa681/LC5nGs6tjA.json"
+                    background="transparent" speed="1" loop autoplay
+                    class="h-60 p-2 mb-5 bg-slate-700  rounded shadow-lg transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110  duration-300 hover:shadow-secondary animate-pulse"></lottie-player>
+
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="bg-gray-800 text-center pt-28 text-white" id="contact">
+        <div class="flex pl-6">
+            <h1 class="text-3xl gap-5 ml-10 font-bold">Contact <span class="text-secondary">Me</span></h1>
+            <div class="h-1 m-7 bg-secondary hidden sm:inline sm:w-60"></div>
+        </div>
+        <div class="flex flex-col sm:flex-row justify-between text-center text-white w-full">
+            <div class="m-5 w-[50%]">
+                <lottie-player src="https://lottie.host/6e4dcf8c-4082-4359-bd2c-19ad4aa1fb30/SL7EPBGVTM.json"
+                    background="transparent" speed="1" loop autoplay class="w-[80%]"></lottie-player>
+            </div>
+            <div class="text-center w-[50%]">
+                <form action="" class="p-5 mr-3 rounded-lg border-4 border-opacity-5 shadow-lg bg-slate-200">
+                    <h1 class="text-slate-500 font-bold pb-5">Fill the below Form for any query : </h1>
+                    <div class="flex justify-between w-full">
+                        <input type="text" placeholder="First Name"
+                            class="p-2 m-2 bg-slate-700 text-slate-500 rounded-lg w-1/2">
+                        <input type="text" placeholder="Last Name"
+                            class="p-2 m-2 bg-slate-700 text-slate-500 rounded-lg w-1/2">
+                    </div>
+                    <div class="flex justify-between w-full">
+                        <input type="email" placeholder="Email"
+                            class="p-2 m-2 bg-slate-700 text-slate-500 rounded-lg w-1/2">
+                        <input type="number" placeholder="Mobile No."
+                            class="p-2 m-2 bg-slate-700 text-slate-500 rounded-lg w-1/2">
+                    </div>
+                    <textarea name="message" id="message" rows="10"
+                        class="p-2 m-2 bg-slate-700 text-slate-500 rounded-lg  w-full">Write your Query</textarea>
+
+                    <br>
+                    <input type="submit" value="Submit" class="pl-8 pr-8 pt-2 pb-2 m-2 font-semibold rounded-full bg-secondary text-black shadow-lg hover:shadow-secondary animate-pulse
+                ">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="flex bg-gray-800 justify-center items-center">
+        <div class="flex flex-col sm:flex-row bg-slate-700 w-[80%] mt-10 rounded-tl-2xl rounded-tr-2xl pl-6">
+            <div class="text-white font-semibold gap-10 p-3 m-4 w-[40%]">
+                <h1 class="text-2xl font-bold font-serif">Get in touch</h1>
+                <p class="text-secondary font-serif text-lg font-semi-bold">Copyright @ 2024 | All rights reserved.</p>
+                <div class="text-center flex  items-center mt-3">
+                    <div
+                        class="hover:shadow-lg hover:shadow-slate-100  transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110  duration-300">
+                        <a href="https://www.linkedin.com/in/ashmita-shrivas-566265202"
+                            class="border-2 p-1 border-secondary rounded-lg mr-2 hover:bg-secondary shadow-sm shadow-slate-100"><i
+                                class="ri-linkedin-box-line text-secondary text-xl hover:text-black"></i></a>
+                    </div>
+
+                    <div
+                        class="hover:shadow-lg hover:shadow-slate-100  transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110  duration-300">
+                        <a class="border-2 p-1 mr-2 border-secondary rounded-lg  hover:bg-secondary shadow-sm shadow-slate-100"
+                            href="https://wa.me/918602941865">
+                            <i class="fa-brands fa-whatsapp text-secondary text-xl hover:text-black"></i></a>
+                    </div>
+                    <div
+                        class="hover:shadow-lg hover:shadow-slate-100  transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110  duration-300">
+                        <a href="mailto:shrivasashmita.com"
+                            class="border-2 p-1 border-secondary rounded-lg hover:bg-secondary shadow-sm shadow-slate-100"><i
+                                class="ri-mail-line text-secondary text-xl hover:text-black"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col sm:flex-row mt-1 m-5 w-40%">
+                <div
+                    class="relative h-40 w-40 sm:w-40 m-7 bg-secondary rounded-tl-xl shadow-lg hover:shadow-slate-100  transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110  duration-300">
+                    <div
+                        class="absolute h-40 w-40 sm:w-40 m-5 bg-slate-800 rounded-tl-lg rounded-br-xl flex flex-col justify-center items-center ">
+                        <a href="#about"
+                            class="border-2 p-1 border-secondary rounded-lg mr-2 hover:bg-secondary shadow-sm shadow-slate-100 text-secondary">
+                            <i class="fa-solid fa-address-card fa-md"></i>
+                        </a>
+                        <p class="text-white font-serif text-lg font-bold">About me </p>
+                    </div>
+                </div>
+                <div
+                    class="relative h-40 w-40 sm:w-40 m-7 bg-secondary rounded-tl-xl shadow-lg  hover:shadow-slate-100  transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110  duration-300">
+                    <div
+                        class="absolute h-40 w-40 sm:w-40 m-5 bg-slate-800 rounded-tl-lg rounded-br-xl flex flex-col justify-center items-center">
+                        <a href="#contact"
+                            class="border-2 p-1 border-secondary rounded-md mr-2 hover:bg-secondary shadow-sm shadow-slate-100 text-secondary hover:text-black">
+                            <i class="fa-solid fa-phone-volume fa-lg"></i>
+                        </a>
+                        <p class="text-white font-serif text-lg font-bold">Contact Me</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://kit.fontawesome.com/710919bc1f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
